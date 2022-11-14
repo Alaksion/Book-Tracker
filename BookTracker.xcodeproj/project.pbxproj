@@ -99,13 +99,9 @@
 		E5976D98291DF4AE003F5BD9 /* BookTracker */ = {
 			isa = PBXGroup;
 			children = (
-				E5976D99291DF4AE003F5BD9 /* AppDelegate.swift */,
-				E5976D9B291DF4AE003F5BD9 /* SceneDelegate.swift */,
+				E5D14FBE2921DCAD002EB931 /* Application */,
 				E5976D9D291DF4AE003F5BD9 /* ViewController.swift */,
-				E5976DA5291DF4B0003F5BD9 /* Assets.xcassets */,
-				E5976DA7291DF4B0003F5BD9 /* LaunchScreen.storyboard */,
 				E5976DAA291DF4B0003F5BD9 /* Info.plist */,
-				E5976DA2291DF4AE003F5BD9 /* BookTracker.xcdatamodeld */,
 			);
 			path = BookTracker;
 			sourceTree = "<group>";
@@ -125,6 +121,34 @@
 				E5976DBF291DF4B0003F5BD9 /* BookTrackerUITestsLaunchTests.swift */,
 			);
 			path = BookTrackerUITests;
+			sourceTree = "<group>";
+		};
+		E5D14FBE2921DCAD002EB931 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				E5D14FC02921DCD1002EB931 /* CoreData */,
+				E5D14FBF2921DCC4002EB931 /* Resources */,
+				E5976D9B291DF4AE003F5BD9 /* SceneDelegate.swift */,
+				E5976D99291DF4AE003F5BD9 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		E5D14FBF2921DCC4002EB931 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E5976DA5291DF4B0003F5BD9 /* Assets.xcassets */,
+				E5976DA7291DF4B0003F5BD9 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E5D14FC02921DCD1002EB931 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				E5976DA2291DF4AE003F5BD9 /* BookTracker.xcdatamodeld */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
