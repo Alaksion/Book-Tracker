@@ -10,7 +10,6 @@
 		E5976D9A291DF4AE003F5BD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5976D99291DF4AE003F5BD9 /* AppDelegate.swift */; };
 		E5976D9C291DF4AE003F5BD9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5976D9B291DF4AE003F5BD9 /* SceneDelegate.swift */; };
 		E5976D9E291DF4AE003F5BD9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5976D9D291DF4AE003F5BD9 /* ViewController.swift */; };
-		E5976DA1291DF4AE003F5BD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5976D9F291DF4AE003F5BD9 /* Main.storyboard */; };
 		E5976DA4291DF4AE003F5BD9 /* BookTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E5976DA2291DF4AE003F5BD9 /* BookTracker.xcdatamodeld */; };
 		E5976DA6291DF4B0003F5BD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5976DA5291DF4B0003F5BD9 /* Assets.xcassets */; };
 		E5976DA9291DF4B0003F5BD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5976DA7291DF4B0003F5BD9 /* LaunchScreen.storyboard */; };
@@ -41,7 +40,6 @@
 		E5976D99291DF4AE003F5BD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5976D9B291DF4AE003F5BD9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E5976D9D291DF4AE003F5BD9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E5976DA0291DF4AE003F5BD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E5976DA3291DF4AE003F5BD9 /* BookTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BookTracker.xcdatamodel; sourceTree = "<group>"; };
 		E5976DA5291DF4B0003F5BD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5976DA8291DF4B0003F5BD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -104,7 +102,6 @@
 				E5976D99291DF4AE003F5BD9 /* AppDelegate.swift */,
 				E5976D9B291DF4AE003F5BD9 /* SceneDelegate.swift */,
 				E5976D9D291DF4AE003F5BD9 /* ViewController.swift */,
-				E5976D9F291DF4AE003F5BD9 /* Main.storyboard */,
 				E5976DA5291DF4B0003F5BD9 /* Assets.xcassets */,
 				E5976DA7291DF4B0003F5BD9 /* LaunchScreen.storyboard */,
 				E5976DAA291DF4B0003F5BD9 /* Info.plist */,
@@ -236,7 +233,6 @@
 			files = (
 				E5976DA9291DF4B0003F5BD9 /* LaunchScreen.storyboard in Resources */,
 				E5976DA6291DF4B0003F5BD9 /* Assets.xcassets in Resources */,
-				E5976DA1291DF4AE003F5BD9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,14 +297,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E5976D9F291DF4AE003F5BD9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E5976DA0291DF4AE003F5BD9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E5976DA7291DF4B0003F5BD9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -444,9 +432,11 @@
 				DEVELOPMENT_TEAM = 7H62BDWNNL;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BookTracker/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Book Tracker";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.books";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -458,7 +448,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -472,9 +462,11 @@
 				DEVELOPMENT_TEAM = 7H62BDWNNL;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BookTracker/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Book Tracker";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.books";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -486,7 +478,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
