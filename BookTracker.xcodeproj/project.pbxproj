@@ -16,6 +16,9 @@
 		E5976DB4291DF4B0003F5BD9 /* BookTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5976DB3291DF4B0003F5BD9 /* BookTrackerTests.swift */; };
 		E5976DBE291DF4B0003F5BD9 /* BookTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5976DBD291DF4B0003F5BD9 /* BookTrackerUITests.swift */; };
 		E5976DC0291DF4B0003F5BD9 /* BookTrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5976DBF291DF4B0003F5BD9 /* BookTrackerUITestsLaunchTests.swift */; };
+		E5DF6A522931B8F1003E5D01 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DF6A512931B8F1003E5D01 /* HomeViewController.swift */; };
+		E5DF6A552931B933003E5D01 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DF6A542931B933003E5D01 /* HomeView.swift */; };
+		E5DF6A582931B95A003E5D01 /* BaseViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DF6A572931B95A003E5D01 /* BaseViewProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		E5976DB9291DF4B0003F5BD9 /* BookTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5976DBD291DF4B0003F5BD9 /* BookTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTrackerUITests.swift; sourceTree = "<group>"; };
 		E5976DBF291DF4B0003F5BD9 /* BookTrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E5DF6A512931B8F1003E5D01 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E5DF6A542931B933003E5D01 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		E5DF6A572931B95A003E5D01 /* BaseViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,8 @@
 		E5976D98291DF4AE003F5BD9 /* BookTracker */ = {
 			isa = PBXGroup;
 			children = (
+				E5DF6A562931B944003E5D01 /* Platform */,
+				E5DF6A502931B8E0003E5D01 /* Home */,
 				E5D14FBE2921DCAD002EB931 /* Application */,
 				E5976D9D291DF4AE003F5BD9 /* ViewController.swift */,
 				E5976DAA291DF4B0003F5BD9 /* Info.plist */,
@@ -149,6 +157,23 @@
 				E5976DA2291DF4AE003F5BD9 /* BookTracker.xcdatamodeld */,
 			);
 			path = CoreData;
+			sourceTree = "<group>";
+		};
+		E5DF6A502931B8E0003E5D01 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E5DF6A512931B8F1003E5D01 /* HomeViewController.swift */,
+				E5DF6A542931B933003E5D01 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E5DF6A562931B944003E5D01 /* Platform */ = {
+			isa = PBXGroup;
+			children = (
+				E5DF6A572931B95A003E5D01 /* BaseViewProtocol.swift */,
+			);
+			path = Platform;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,8 +306,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5DF6A522931B8F1003E5D01 /* HomeViewController.swift in Sources */,
 				E5976D9E291DF4AE003F5BD9 /* ViewController.swift in Sources */,
 				E5976D9A291DF4AE003F5BD9 /* AppDelegate.swift in Sources */,
+				E5DF6A552931B933003E5D01 /* HomeView.swift in Sources */,
+				E5DF6A582931B95A003E5D01 /* BaseViewProtocol.swift in Sources */,
 				E5976D9C291DF4AE003F5BD9 /* SceneDelegate.swift in Sources */,
 				E5976DA4291DF4AE003F5BD9 /* BookTracker.xcdatamodeld in Sources */,
 			);
